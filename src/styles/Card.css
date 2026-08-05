@@ -1,0 +1,99 @@
+.dashboard-card{
+    background:#fff;
+    border:1px solid #eef1f6;
+    border-radius:18px;
+    padding:20px;
+    display:flex;
+    align-items:center;
+    gap:18px;
+    box-shadow:0 4px 16px rgba(15,23,42,.035);
+    transition:.25s;
+}
+
+.dashboard-card:hover{
+    transform:translateY(-4px);
+    border-color:#dbeafe;
+    box-shadow:0 16px 28px rgba(15,23,42,.09);
+}
+
+/* ========================= */
+
+.card-icon{
+    width:54px;
+    height:54px;
+    border-radius:14px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:21px;
+    flex-shrink:0;
+}
+
+/* ========================= */
+
+.card-content{
+    display:flex;
+    flex-direction:column;
+}
+
+.card-content h2{
+    font-size:30px;
+    color:#0f172a;
+    margin:0;
+    font-weight:800;
+}
+
+.card-content p{
+    margin-top:4px;
+    color:#64748b;
+    font-size:14px;
+}
+
+/* ==========================================
+        COLORS - pastel bg, solid icon
+========================================== */
+
+.blue{
+    background:#dbeafe;
+    color:#2563eb;
+}
+
+.orange{
+    background:#fef3c7;
+    color:#d97706;
+}
+
+.purple{
+    background:#ede9fe;
+    color:#7c3aed;
+}
+
+.green{
+    background:#dcfce7;
+    color:#16a34a;
+}
+
+.red{
+    background:#fee2e2;
+    color:#dc2626;
+}
+
+/* ========================= */
+
+@media(max-width:768px){
+
+.dashboard-card{
+    padding:18px;
+}
+
+.card-content h2{
+    font-size:24px;
+}
+
+.card-icon{
+    width:48px;
+    height:48px;
+    font-size:18px;
+}
+
+}

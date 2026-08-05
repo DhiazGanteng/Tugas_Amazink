@@ -1,0 +1,76 @@
+.chart-card{
+    background:#ffffff;
+    border:1px solid #eef1f6;
+    border-radius:18px;
+    padding:22px;
+    box-shadow:0 2px 10px rgba(15,23,42,.04);
+    transition:.3s;
+    height:100%;
+}
+
+.chart-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 30px rgba(15,23,42,.08);
+}
+
+/* ========================= */
+
+.chart-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.chart-header h3{
+    font-size:17px;
+    font-weight:700;
+    color:#111827;
+}
+
+.chart-header button{
+    width:34px;
+    height:34px;
+    border:none;
+    border-radius:10px;
+    background:#f8fafc;
+    color:#64748b;
+    font-size:16px;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.chart-header button:hover{
+    background:#eff6ff;
+    color:#2563eb;
+}
+
+/* ========================= */
+
+.chart-body{
+    min-height:260px;
+    display:flex;
+    flex-direction:column;
+}
+
+/* ========================= */
+
+@media(max-width:992px){
+
+.chart-card{
+    margin-top:0;
+}
+
+}
+
+@media(max-width:768px){
+
+.chart-card{
+    padding:18px;
+}
+
+.chart-header h3{
+    font-size:16px;
+}
+
+}

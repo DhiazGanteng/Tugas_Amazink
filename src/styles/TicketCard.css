@@ -1,0 +1,113 @@
+/* ==========================================
+            TICKET CARD
+========================================== */
+
+.ticket-card{
+    display:block;
+    width:100%;
+    border:none;
+    text-align:left;
+    font:inherit;
+    background:#fff;
+    border:1px solid #E5E7EB;
+    border-radius:16px;
+    padding:22px;
+    margin-bottom:18px;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.ticket-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 30px rgba(15,23,42,.08);
+}
+
+/* ========================================== */
+
+.ticket-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom:18px;
+}
+
+.ticket-id{
+    color:#2563EB;
+    font-weight:700;
+    font-size:15px;
+}
+
+.ticket-top h3{
+    margin-top:8px;
+    font-size:24px;
+    color:#111827;
+}
+
+/* ========================================== */
+
+.ticket-tag{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:22px;
+}
+
+.category{
+    background:#EEF2FF;
+    color:#4F46E5;
+    padding:6px 12px;
+    border-radius:8px;
+    font-size:13px;
+    font-weight:600;
+}
+
+/* ========================================== */
+
+.ticket-footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-top:1px solid #F1F5F9;
+    padding-top:18px;
+}
+
+.ticket-user,
+.ticket-date{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:#6B7280;
+    font-size:14px;
+}
+
+.ticket-user svg,
+.ticket-date svg{
+    color:#94A3B8;
+}
+
+/* ========================================== */
+
+@media(max-width:768px){
+
+.ticket-top{
+    flex-direction:column;
+    gap:12px;
+}
+
+.ticket-footer{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+}
+
+.ticket-top h3{
+    font-size:20px;
+}
+
+}
+
+@media(max-width:420px){
+.ticket-card{ padding:18px 16px; }
+.ticket-top h3{ overflow-wrap:anywhere; }
+.ticket-tag{ flex-wrap:wrap; }
+}

@@ -1,0 +1,43 @@
+.sidebar{width:270px;height:100vh;position:fixed;left:0;top:0;background:#fff;border-right:1px solid #e7edf5;box-shadow:12px 0 30px rgba(15,23,42,.025);display:flex;flex-direction:column;justify-content:space-between;z-index:100;}
+.sidebar-top{padding:28px 18px;}
+.sidebar-logo{display:flex;align-items:center;gap:14px;padding-bottom:22px;margin:0 4px 26px;border-bottom:1px solid #eef1f6;}
+.logo-icon{width:44px;height:44px;border-radius:12px;background:#2563eb;color:#fff;display:flex;justify-content:center;align-items:center;font-size:18px;flex-shrink:0;}
+.sidebar-logo h2{font-size:16.5px;color:#1e3a8a;font-weight:800;}
+.sidebar-logo span{font-size:12px;color:#94a3b8;}
+.menu-label{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#94a3b8;font-weight:700;margin-bottom:14px;padding-left:6px;}
+.sidebar-menu{list-style:none;display:flex;flex-direction:column;gap:4px;}
+.sidebar-menu a{display:flex;align-items:center;gap:14px;padding:12px 14px;border-radius:12px;text-decoration:none;color:#475569;font-size:14.5px;font-weight:600;transition:.2s;position:relative;}
+.sidebar-menu a:hover{background:#f1f5fb;color:#1e3a8a;}
+.sidebar-menu a.active{background:linear-gradient(135deg,#2563eb,#1d4ed8);color:#fff;box-shadow:0 10px 20px rgba(37,99,235,.25);}
+.menu-icon{font-size:16px;width:18px;display:flex;justify-content:center;}
+.menu-title{flex:1;}
+.menu-badge{background:#eef2ff;color:#2563eb;font-size:11.5px;font-weight:700;padding:2px 9px;border-radius:999px;}
+.sidebar-menu a.active .menu-badge{background:rgba(255,255,255,.25);color:#fff;}
+.sidebar-footer{padding:18px;border-top:1px solid #eef1f6;}
+.sidebar-footer button{width:100%;display:flex;align-items:center;gap:12px;background:none;border:none;color:#ef4444;font-size:14.5px;font-weight:600;cursor:pointer;padding:10px 8px;border-radius:10px;transition:.2s;}
+.sidebar-footer button:hover{background:#fef2f2;}
+.mobile-menu-toggle,.sidebar-overlay{display:none;}
+
+@media(max-width:992px){
+  .sidebar{width:90px;}
+  .sidebar-logo div:last-child,.menu-label,.menu-title,.menu-badge,.sidebar-footer button span{display:none;}
+  .sidebar-logo,.sidebar-menu a{justify-content:center;}
+}
+
+@media(max-width:768px){
+  .sidebar{width:280px;height:100dvh;transform:translateX(-105%);transition:transform .25s ease;z-index:202;box-shadow:16px 0 40px rgba(15,23,42,.16);}
+  .sidebar.sidebar-open{transform:translateX(0);}
+  .mobile-menu-toggle{display:grid;place-items:center;position:fixed;left:16px;top:16px;width:42px;height:42px;border:none;border-radius:14px;color:#fff;background:#2563eb;box-shadow:0 10px 22px rgba(37,99,235,.35);font-size:18px;z-index:203;}
+  .sidebar-overlay{display:block;position:fixed;inset:0;width:100%;height:100%;border:none;background:rgba(15,23,42,.42);z-index:201;}
+  .sidebar-top{padding:72px 18px 18px;}
+  .sidebar-logo{display:flex;justify-content:flex-start;align-items:center;gap:12px;}
+  .sidebar-logo div:last-child,.menu-label,.sidebar-footer button span{display:block;}
+  .sidebar-footer{display:block;}
+  .sidebar-menu{flex-direction:column;justify-content:flex-start;gap:8px;}
+  .sidebar-menu li{flex:none;}
+  .sidebar-menu a{min-height:auto;padding:12px 14px;justify-content:flex-start;gap:14px;border-radius:12px;font-size:14.5px;font-weight:600;}
+  .sidebar-menu a.active{box-shadow:0 10px 20px rgba(37,99,235,.25);}
+  .menu-title{display:block;flex:1;}
+  .menu-icon{width:18px;font-size:16px;}
+  .menu-badge{display:block;}
+}
