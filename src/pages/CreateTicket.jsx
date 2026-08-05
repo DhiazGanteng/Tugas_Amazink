@@ -158,7 +158,7 @@ const CreateTicket = () => {
             </div>
 
             <div className="preview-item">
-              <span>Type</span>
+              <span>Typee</span>
               <strong>{form.type || "—"}</strong>
             </div>
 
