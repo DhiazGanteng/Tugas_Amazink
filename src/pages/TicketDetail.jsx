@@ -121,7 +121,7 @@ const TicketDetail = () => {
         </div>
       </section>
       <section className="detail-card">
-        <h2>Komentar</h2>
+        <h2>Komentarr</h2>
         <div className="comment-list">
           {comments.length === 0 ? <p className="empty-note">Belum ada komentar.</p> : comments.map((item) => <article className="comment" key={item.id}>
             <h4>{item.user?.name || item.author_name || `User #${item.user_id ?? "-"}`}</h4>
